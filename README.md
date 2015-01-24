@@ -1,4 +1,4 @@
-# IOT Wallet service & connector mechanism for internet of things based on blockchain method
+# IOT Wallet service & connector mechanism based on blockchain method
 Portable with all types of Cryptocurrencies
 ### To DO ###
 ## Every device has a uni-OR-multi signed blockchain ID
