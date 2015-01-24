@@ -1,6 +1,6 @@
 # IOT Wallet service & connector mechanism based on blockchain method
 Portable with all types of Cryptocurrencies
-### To DO ###
+###! To DO ! ###
 ## Every device has a uni-OR-multi signed blockchain ID
 ##    All machine ID "ideally" should be double-signed with owner's key
 ## Machines can be set to call/ask protocol for financial transactions
