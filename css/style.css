@@ -42,7 +42,7 @@ a:hover{
   position:absolute;
   left:50%; /* centers the loading animation horizontally one the screen */
   top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(img/preloader.gif); /* path to your loading animation */
+  background-image:url(/img/preloader.gif); /* path to your loading animation */
   background-repeat:no-repeat;
   background-position:center;
   margin:-100px 0 0 -100px; /* is width and height divided by two */
@@ -62,11 +62,11 @@ a:hover{
   height:51px;
   border:none;
   text-indent:100%;
-  background:url(img/ui.totop.png) no-repeat left top;
+  background:url(/img/ui.totop.png) no-repeat left top;
 }
 
 #toTopHover {
-  background:url(img/ui.totop.png) no-repeat left -51px;
+  background:url(/img/ui.totop.png) no-repeat left -51px;
   width:51px;
   height:51px;
   display:block;
@@ -229,13 +229,13 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(img/photo-01.jpg); 
+  background-image: url(/img/photo-01.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(img/photo-02.jpg);
+  background-image: url(/img/photo-02.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(img/photo-03.jpg);
+  background-image: url(/img/photo-03.jpg);
 }
 
 /********************************/
@@ -299,7 +299,7 @@ Image credits: unsplash.com
 }
 
 .logo {
-  padding-top: 17px;    
+  padding-top: 7px;    
   /*width: 50px;*/
   font-size: 25px;
   color: #3498db;
@@ -329,7 +329,7 @@ Image credits: unsplash.com
   display: inline;
 }
 
-.logo a img{
+.logo a /img{
   height: 50 px;
 }
 
@@ -735,7 +735,7 @@ scroll {  0% {
     cursor:pointer;
   }
 
-  .portfolio img {
+  .portfolio /img {
     max-width:100%;
     position: relative;
   }
@@ -899,7 +899,7 @@ color: #282a2e;
   transition: all .5s ease-in-out;
 }
 
-.slider-content img {
+.slider-content /img {
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
@@ -1048,7 +1048,7 @@ line-height: 45px !important;}
 
 
 .contact_area{
-  background: url(img/photography.png);
+  background: url(/img/photography.png);
 }
 
 .contact_section{
