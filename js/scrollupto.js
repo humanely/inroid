@@ -5,7 +5,7 @@
     			text: 'To Top',
     			min: 200,
     			inDelay:600,
-    			outDelay:400,
+    			outDelay:800,
       			containerID: 'toTop',
     			containerHoverID: 'toTopHover',
     			scrollSpeed: 1200,
