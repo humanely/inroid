@@ -112,7 +112,7 @@
 
         {
 
-          'headline':'BMPN2 or Standard Process Design',
+          'headline':'BPMN2 or Standard Process Design',
           'value':8,
           'length':10,
           'description':'Significant experience and knowlage of process design'
