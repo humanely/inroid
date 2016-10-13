@@ -112,26 +112,26 @@
 
         {
 
-          'headline':'HTML & CSS',
+          'headline':'BMPN2 or Standard Process Design',
           'value':8,
-          'length':9,
-          'description':'Significant experience and knowlage of HTML(5) and CSS functionality and use.'
+          'length':10,
+          'description':'Significant experience and knowlage of process design'
 
         },
         {
 
-          'headline':'JavaScript & jQuery',
+          'headline':'Statistics & data science',
           'value':6,
-          'length':5,
-          'description':'Experience with object-oriented JavaScript. </br> Extended knowlage of DOM manipulation in aiding and extending the UI.'
+          'length':10,
+          'description':'Experience with clustering, classification, and statistical measures of outcome testing'
 
         },
         {
 
-          'headline':'Ruby & Python',
-          'value':3,
-          'length':5,
-          'description':'Experience with object-oriented JavaScript. </br> Extended knowlage of DOM manipulation in aiding and extending the UI.'
+          'headline':'HTML/CSS/Javascript',
+          'value':4,
+          'length':10,
+          'description':'Basic HTML/CSS for template designing'
 
         }
 
