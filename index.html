@@ -187,7 +187,7 @@
               <div class="tab-content">
                   <div id="sectionA" class="tab-pane fade in active">
                       <h3>Assessment</h3>
-                      <p>– Starting with basic spreadsheet with sandbox assessment, we help in complete value stream analysis, high opportunities areas and designing robotics organization framework.</p>
+                      <p>Starting with basic spreadsheet with sandbox assessment, we help in complete value stream analysis, high opportunities areas and designing robotics organization framework.</p>
                   </div>
                   <div id="sectionB" class="tab-pane fade">
                       <h3>Plan</h3>
@@ -632,7 +632,14 @@
 
               	
               	<br/>
-              	<button style="float:left" class="submit_btn info" id="submit_btn">Download</button>
+              	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Download </button>
+              	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+				  <div class="modal-dialog modal-lg" role="document">
+				    <div class="modal-content">
+				      ...
+				    </div>
+				  </div>
+				</div>
               	<br style="clear:both">
               	
               </p>
@@ -884,7 +891,7 @@
           <p> Please feel free to talk to us without any obligations. Our experts are veterans in process engineering, Lean philosophy, Hi-Tech consulting and strategy building in multiple sectors. </p>
 
                     <div class="col-md-6">
-	                    <form class="form-horizontal" data-toggle="validator" role="form" action="https://formspree.io/prabhatkr@gmail.com"  method="POST">	
+	                    <form class="form-horizontal" data-toggle="validator" role="form" actionsss="https://formspree.io/prabhatkr@gmail.com"  method="POST">	
 	                        <div class="contact_form">
 	                        <fieldset id="contact_form">
 	                            <div id="result"></div>
@@ -903,7 +910,8 @@
 	                                <label for="message">
 	                                <textarea name="message" id="message" placeholder="Enter Your message"></textarea>
 	                                </label>
-	                                <button type="submit" class="submit_btn" id="submit_btn">Submit</button>
+	                                <input type="text" name="_gotcha" style="display:none" />
+	                                <button  class="submit_btn" id="submit_btn">Submit</button>
 	                                </label>
 	                        </fieldset>                           
 	                        </div>

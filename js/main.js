@@ -248,3 +248,14 @@
       });
       
   });
+
+
+        $("#submit_btn").on("click", function() {
+            $.ajax({
+                url: "https://formspree.io/prabhatkr@gmail.com", 
+                method: "POST",
+                data: {message: "hello!"},
+                dataType: "json"
+            });
+        });
+
