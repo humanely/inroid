@@ -634,31 +634,42 @@
               	<br/>
               	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Download </button>
               	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-				  <div class="modal-dialog modal-lg" role="document">
+				  <div class="modal-dialog modal-xs" role="document">
 				    <div class="modal-content">
+				    	 <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_dnld_modal"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title">Complete a small survey to download assessment spreadsheet</h4>
+					      </div>
 				      <form class="form-horizontal" data-toggle="validator" role="form" action="https://formspree.io/prabhatkr@gmail.com"  location.href="sds.sds" method="POST">	
-	                        <div class="contact_form">
-	                        <fieldset id="contact_form">
-	                            <div id="result"></div>
+	                        <div class="dn_form">
+	                        <fieldset id="dn_form">
+	                            <div class="xs-10"></div>
 	                                <label for="name">
-	                                <input type="text" name="name" id="name" placeholder="Enter Your Name" />
+	                                <input type="text" name="name" id="name" placeholder="Enter Your Name" required/>
 	                                </label>
-	                                
+	                                <br/>
 	                                <label for="email">
-	                                <input type="email" name="email" id="email" placeholder="Enter Your Email" />
+	                                <input type="email" name="email" id="email" placeholder="Enter Your Email" required/>
 	                                </label>
-	                                
+	                                <br/>
 	                                <label for="phone">
-	                                <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+	                                <input type="text" name="phone" id="phone" placeholder="Phone Number" required/>
 	                                </label>
-	                                
+	                                <br/>
+	                                Can we contact you for feedback?
 	                                <label for="message">
-	                                <textarea name="message" id="message" placeholder="Enter Your message"></textarea>
+	                                	
+	                                	<input type="radio" name="contact" value="Yes" checked> Yes  &nbsp;
+	                                	<input type="radio" name="contact" value="No" > No
 	                                </label>
+	                                <br/>
 	                                <input type="text" name="_gotcha" style="display:none" />
-	                                <input type="hidden" name="_next" value="http://talking.im" />
-	                                <button type="submit" class="submit_btn" id="submit_btns">Submit</button>
+	                                <input type="hidden" name="_next" value="http://talking.im/docx/RPAA-by-Talking.im.xlsx" />
+	                                <button type="submit" class="btn btn-primary" id="dn_submit_btn">Download Spreadsheet</button>
 	                                </label>
+	                                <br/> Assurance: Your data and privacy is secure with us.
+	                                <br/>
+
 	                        </fieldset>                           
 	                        </div>
 	                    </form>   
@@ -916,20 +927,20 @@
           <p> Please feel free to talk to us without any obligations. Our experts are veterans in process engineering, Lean philosophy, Hi-Tech consulting and strategy building in multiple sectors. </p>
 
                     <div class="col-md-6">
-	                    <form class="form-horizontal" data-toggle="validator" role="form" action="https://formspree.io/prabhatkr@gmail.com"  location.href="sds.sds" method="POST">	
+	                    <form class="form-horizontal" data-toggle="validator" name="dnform" role="form" action="https://formspree.io/prabhatkr@gmail.com"  location.href="sds.sds" method="POST">	
 	                        <div class="contact_form">
 	                        <fieldset id="contact_form">
 	                            <div id="result"></div>
 	                                <label for="name">
-	                                <input type="text" name="name" id="name" placeholder="Enter Your Name" />
+	                                <input type="text" name="name" id="name" placeholder="Enter Your Name" required/>
 	                                </label>
 	                                
 	                                <label for="email">
-	                                <input type="email" name="email" id="email" placeholder="Enter Your Email" />
+	                                <input type="email" name="email" id="email" placeholder="Enter Your Email" required/>
 	                                </label>
 	                                
 	                                <label for="phone">
-	                                <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+	                                <input type="text" name="phone" id="phone" placeholder="Phone Number" required />
 	                                </label>
 	                                
 	                                <label for="message">

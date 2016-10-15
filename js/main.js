@@ -250,12 +250,15 @@
   });
 
 
-        $("#submit_btn").on("click", function() {
-            $.ajax({
-                url: "https://formspree.io/prabhatkr@gmail.com", 
-                method: "POST",
-                data: {message: "hello!"},
-                dataType: "json"
-            });
+        $("#dn_submit_btn").on("click", function() {
+           // setInterval(function(){ 
+          //var x = document.forms["dnform"]["name"].value;
+          //var y = document.forms["dnform"]["email"].value;
+          //var z = document.forms["dnform"]["phone"].value;
+          //if (x != null && x != "" && y != null && y != "" && z != null && z != "" ) {
+          //  alert(x)
+                $("#close_dnld_modal").click();
+            //  }
+               // }, 3000);
         });
 
