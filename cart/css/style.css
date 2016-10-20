@@ -32,6 +32,14 @@ Primary style
 Main Components 
 
 -------------------------------- */
+.prodovlay{
+  background-color: white;
+}
+
+.prodpic img{
+  float: left
+}
+
 .cd-cart-container::before {
   /* dark bg layer visible when the cart is open */
   content: '';
