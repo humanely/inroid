@@ -85,34 +85,7 @@
           <li><a href=".contact_area">Contact</a></li>                    
         <li><div style="color:blue" class="ico"><i class="fa fa-shopping-cart fa-lg"></i> <sup>0</sup></div></li>
         <li>
-          <div class="cd-cart-container empty">
-            <a href="#0" class="cd-cart-trigger">
-              Cart
-              <ul class="count"> <!-- cart items count -->
-                <li>0</li>
-                <li>0</li>
-              </ul> <!-- .count -->
-            </a>
-
-            <div class="cd-cart">
-              <div class="wrapper">
-                <header>
-                  <h2>Cart</h2>
-                  <span class="undo">Item removed. <a href="#0">Undo</a></span>
-                </header>
-                
-                <div class="body">
-                  <ul>
-                    <!-- products added to the cart will be inserted here using JavaScript -->
-                  </ul>
-                </div>
-
-                <footer>
-                  <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
-                </footer>
-              </div>
-            </div> <!-- .cd-cart -->
-          </div> 
+          
         </li>
         </ul>
 
@@ -548,7 +521,7 @@
           </div>
         </div>
 
-        <div class="modal fade dgu-rob2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal fade acc1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-xs" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -628,7 +601,7 @@
           </div>
         </div>
 
-        <div class="modal fade dgu-rob2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal fade ast1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-xs" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -1383,8 +1356,38 @@
 
    <script src="js/scrollupto.js"></script>
    <script type="text/javascript" src="js/main.js"></script>
-   <script src="cart/js/main.js"></script> <!-- Resource jQuery -->
+   <script src="cart/js/cart.js"></script> <!-- Resource jQuery -->
    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <div class="cd-cart-container empty">
+    <a href="#0" class="cd-cart-trigger">
+      Bot Order Cart
+      <ul class="count"> <!-- cart items count -->
+        <li>0</li>
+        <li>0</li>
+      </ul> <!-- .count -->
+    </a>
+
+    <div class="cd-cart">
+      <div class="wrapper">
+        <header>
+          <h2>Cart</h2>
+          <span class="undo">Item removed. <a href="#0">Undo</a></span>
+        </header>
+        
+        <div class="body">
+          <ul>
+            <!-- products added to the cart will be inserted here using JavaScript -->
+          </ul>
+        </div>
+
+        <footer>
+          <a href="#0" class="checkout btn"><em>Submit Order - $<span>0</span></em></a>
+        </footer>
+      </div>
+    </div> <!-- .cd-cart -->
+  </div> 
+
 </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
