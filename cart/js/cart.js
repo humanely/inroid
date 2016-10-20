@@ -76,22 +76,28 @@ jQuery(document).ready(function($){
 
 	function addToCart(trigger) {
 		var cartIsEmpty = cartWrapper.hasClass('empty');
+		//console.log(trigger,"---", trigger[0].dataset	)
+		var pid = trigger.data('pid')
+		var pname = trigger.data('pname')
+		var img = trigger.data('img')
+
+
 		//update cart product list
-		addProduct();
+		addProduct(pid,pname,img);
 		//update number of items 
 		updateCartCount(cartIsEmpty);
 		//update total price
-		updateCartTotal(trigger.data('price'), true);
+		///updateCartTotal(trigger.data('price'), true);
 		//show cart
 		cartWrapper.removeClass('empty');
 	}
 
-	function addProduct() {
+	function addProduct(pid,pname,img) {
 		//this is just a product placeholder
 		//you should insert an item with the selected product info
 		//replace productId, productName, price and url with your real product info
 		productId = productId + 1;
-		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="cart/img/product-preview.png" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">Product Name</a></h3><span class="price">$25.99</span><div class="actions"><a href="#0" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
+		var productAdded = $('<li class="product"><div class="product-image"><a ><img style="height: 5em" src="http://talking.im/img/portfolios/'+ img+'" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">'+pname+'</a></h3><div class="actions"><a href="#0" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ pid +'">Qty</label><span class="select"><select id="cd-product-'+ pid +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
 		cartList.prepend(productAdded);
 	}
 
@@ -165,6 +171,7 @@ jQuery(document).ready(function($){
 	}
 
 	function updateCartTotal(price, bool) {
-		bool ? cartTotal.text( (Number(cartTotal.text()) + Number(price)).toFixed(2) )  : cartTotal.text( (Number(cartTotal.text()) - Number(price)).toFixed(2) );
+		//bool ? cartTotal.text( (Number(cartTotal.text()) + Number(price)).toFixed(2) )  : cartTotal.text( (Number(cartTotal.text()) - Number(price)).toFixed(2) );
+		//cartTotal.text(  cartCount.find('li').eq(0).text(quantity) )
 	}
 });
