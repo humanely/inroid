@@ -229,12 +229,15 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(/img/indah.jpg); 
+  background-image: url(/img/portfolios/slides/TousgDecision.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(/img/portfolios/slides/Imagine-WAI2.jpg);
+  background-image: url(/img/indah.jpg); 
 }
 .fade-carousel .slides .slide-3 {
+  background-image: url(/img/portfolios/slides/Imagine-WAI2.jpg);
+}
+.fade-carousel .slides .slide-4 {
   background-image: url(/img/portfolios/slides/getDigitalWoDisruption.jpg);
 }
 
