@@ -139,12 +139,12 @@
 
       $(document).ready(function(){
 
-        $("#skillset").skillset({
+        /*$("#skillset").skillset({
 
           object:object,
           duration:40
 
-        });
+        });*/
 
       });
 
